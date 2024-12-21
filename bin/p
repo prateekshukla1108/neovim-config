@@ -1,0 +1,33 @@
+#!/bin/bash
+
+PS3="Select a programming language for your project: "
+
+select language in "C" "C++" "Python" "Rust" "Quit"
+do
+    case $language in
+        "C")
+            nvim /home/prateek/projects/c
+            break
+            ;;
+        "C++")
+            nvim /home/prateek/projects/cpp
+            break
+            ;;
+        "Python")
+	    bash -i -c "nvim /home/prateek/projects/python"
+	    break
+            ;;
+        "Rust")
+            nvim /home/prateek/projects/rust
+            break
+            ;;
+        "Quit")
+            echo "Exiting project selector"
+            break
+            ;;
+        *)
+            echo "Invalid option. Please try again."
+            ;;
+    esac
+done
+
