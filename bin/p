@@ -6,19 +6,19 @@ select language in "C" "C++" "Python" "Rust" "Quit"
 do
     case $language in
         "C")
-            nvim /home/prateek/projects/c
+            nvim ~/projects/c
             break
             ;;
         "C++")
-            nvim /home/prateek/projects/cpp
+            nvim ~/projects/cpp
             break
             ;;
         "Python")
-	    bash -i -c "nvim /home/prateek/projects/python"
-	    break
+            nvim ~/projects/python/
+            break
             ;;
         "Rust")
-            nvim /home/prateek/projects/rust
+            nvim ~/projects/rust
             break
             ;;
         "Quit")
