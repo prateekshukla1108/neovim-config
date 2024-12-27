@@ -4,6 +4,8 @@ vim.g.mapleader = " "
 vim.keymap.set('n', 'cpf', 'i#include <iostream>\nusing namespace std;\n\nint main() {\n    \n    return 0;\n}\n<Esc>3ki', { noremap = true, silent = true })
 
 
+-- Map Ctrl+r to execute the macro in register 'a'
+
 -- bootstrap lazy and all plugins
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
@@ -28,6 +30,7 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+vim.keymap.set('n', '<C-d>', 'ggdG', { noremap = true, silent = true })
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")

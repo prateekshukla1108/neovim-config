@@ -6,6 +6,8 @@ A personalized Neovim setup built on NvChad, featuring a sleek development envir
 
 This Neovim configuration is based on NvChad, providing a **fast** and **aesthetic** development experience. The setup includes custom plugins and optimizations for an enhanced coding workflow.
 
+![ScreenShot](assets/ss.png)
+
 ## Features
 
 - **Dashboard**: Alpha dashboard for a clean startup screen
