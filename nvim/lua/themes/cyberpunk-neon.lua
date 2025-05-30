@@ -1,0 +1,108 @@
+-- neon_abyss_revised_selection.lua
+local M = {}
+
+M.base_30 = {
+  white = "#E0D0FF",
+  darker_black = "#00065c",
+  black = "#080A1E",
+  black2 = "#0D0F2B",
+  one_bg = "#0A0D25",
+  one_bg2 = "#181030",
+  one_bg3 = "#15102A",
+  grey = "#706090",             -- Comments (remains the same, was good)
+  grey_fg = "#A088D0",
+  grey_fg2 = "#7080C0",
+  light_grey = "#303860",
+  red = "#FF40C8",
+  baby_pink = "#FF70D0",
+  pink = "#FF1493",
+  line = "#202840",
+  green = "#FFEA00",
+  vibrant_green = "#D050FF",
+  nord_blue = "#60A0FF",
+  blue = "#00C0F0",
+  yellow = "#FFD000",
+  sun = "#FFD060",
+  purple = "#D050FF",
+  dark_purple = "#8A2BE2",      -- Selection BG (more vibrant/lighter than #6A0DAD, from VSCode Neon Abyss editor.selectionBackground #6A0DAD90, making it solid and brighter)
+  teal = "#40E0D0",
+  orange = "#D19A66",
+  cyan = "#00E0E0",
+  statusline_bg = "#181030",
+  lightbg = "#101530",
+  pmenu_bg = "#4A148C",         -- Suggest Widget Selected / Selection Highlight (more distinct/brighter than #382058, closer to VSCode's #4A148C80 for editor.selectionBackground alpha layer)
+  folder_bg = "#00D0F0",
+}
+
+M.base_16 = {
+  base00 = M.base_30.black,
+  base01 = M.base_30.one_bg,
+  base02 = M.base_30.darker_black,
+  base03 = M.base_30.grey,
+  base04 = M.base_30.grey_fg,
+  base05 = M.base_30.white,
+  base06 = "#D0D8FF",
+  base07 = "#F0E0FF",
+  base08 = M.base_30.pink,
+  base09 = M.base_30.orange,
+  base0A = M.base_30.green,
+  base0B = M.base_30.teal,
+  base0C = M.base_30.cyan,
+  base0D = M.base_30.blue,
+  base0E = M.base_30.purple,
+  base0F = M.base_30.baby_pink,
+}
+
+M.polish_hl = {
+  treesitter = {
+    ["@keyword.import"] = { fg = M.base_30.purple },
+    ["@uri"] = { fg = M.base_30.blue, underline = true },
+    ["@tag.delimiter"] = { fg = M.base_30.blue },
+    ["@tag"] = { fg = M.base_30.red },
+    ["@property"] = { fg = M.base_30.nord_blue },
+    ["@punctuation.bracket"] = { fg = M.base_30.blue },
+    ["@punctuation.delimiter"] = { fg = M.base_30.blue },
+    ["@attribute"] = { fg = "#E080FF", italic = true },
+    ["@string"] = { fg = M.base_30.nord_blue },
+    ["@string.escape"] = { fg = M.base_30.baby_pink },
+    ["@character"] = { fg = M.base_30.green },
+    ["@number"] = { fg = M.base_30.green },
+    ["@boolean"] = { fg = M.base_30.green },
+    ["@float"] = { fg = M.base_30.green },
+    ["@function"] = { fg = M.base_30.teal },
+    ["@function.macro"] = { fg = M.base_30.teal },
+    ["@function.call"] = { fg = M.base_30.teal },
+    ["@method"] = { fg = M.base_30.teal },
+    ["@method.call"] = { fg = M.base_30.teal },
+    ["@constructor"] = { fg = M.base_30.purple, italic = true },
+    ["@keyword"] = { fg = M.base_30.purple },
+    ["@keyword.function"] = { fg = M.base_30.purple },
+    ["@keyword.operator"] = { fg = M.base_30.blue },
+    ["@operator"] = { fg = M.base_30.blue },
+    ["@type"] = { fg = M.base_30.cyan },
+    ["@type.builtin"] = { fg = M.base_30.cyan, italic = true },
+    ["@variable"] = { fg = "#D0D8FF" },
+    ["@variable.builtin"] = { fg = M.base_30.baby_pink, italic = true },
+    ["@parameter"] = { fg = M.base_30.green, italic = true },
+    ["@comment"] = { fg = M.base_30.grey, italic = true },
+    ["@punctuation.special"] = { fg = M.base_30.red },
+    ["@constant"] = { fg = M.base_30.green },
+    ["@constant.builtin"] = { fg = M.base_30.green, italic = true},
+    ["@label"] = { fg = M.base_30.baby_pink },
+    ["@include"] = { fg = M.base_30.purple },
+    ["@namespace"] = { fg = M.base_30.cyan },
+  },
+
+  syntax = {
+    Type = { fg = M.base_30.cyan },
+    Identifier = { fg = M.base_30.white },
+    Constant = { fg = M.base_30.green },
+    Statement = { fg = M.base_30.purple },
+    PreProc = { fg = M.base_30.purple },
+    Special = { fg = M.base_30.red },
+    Operator = { fg = M.base_30.blue },
+  },
+}
+
+M.type = "dark"
+return M

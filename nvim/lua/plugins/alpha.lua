@@ -1,9 +1,28 @@
 return {
-  {
     "goolord/alpha-nvim",
-    dependencies = { "echasnovski/mini.icons" },
+    event = "VimEnter",
     config = function()
-      require("alpha").setup(require("alpha.themes.startify").config)
+        local alpha = require("alpha")
+        local dashboard = require("alpha.themes.startify")
+
+        -- Banner
+        local banner = {
+            [[				                                                                       ]],
+            [[				                                                                     ]],
+            [[				       ████ ██████           █████      ██                     ]],
+            [[				      ███████████             █████                             ]],
+            [[				      █████████ ███████████████████ ███   ███████████   ]],
+            [[				     █████████  ███    █████████████ █████ ██████████████   ]],
+            [[				    █████████ ██████████ █████████ █████ █████ ████ █████   ]],
+            [[				  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]],
+            [[				 ██████  █████████████████████ ████ █████ █████ ████ ██████ ]],
+            [[				                                                                       ]],
+        }
+        dashboard.section.header.val = banner
+
+        -- Setup using the theme's options
+        alpha.setup(dashboard.opts)
     end,
-  },
 }
+
+

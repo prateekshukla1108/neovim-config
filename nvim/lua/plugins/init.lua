@@ -13,8 +13,6 @@ return {
     end,
   },
 
-  { import = "plugins.supermaven" },
-  { import = "plugins.override.cmp" },
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
