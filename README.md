@@ -8,10 +8,13 @@ This Neovim configuration is based on NvChad, providing a **fast** and **aesthet
 
 ![ScreenShot](assets/ss.png)
 
+
+## What's new
+
+Now you can use <leader>ga to get context and ask questions about the text selected in visual mode from gemini-cli 
 ## Features
 
 - **Dashboard**: Alpha dashboard for a clean startup screen
-- **AI Assistance**: Supermaven for intelligent code completion
 - **Base Configuration**: Built on NvChad's robust lua-based framework
 - **Lazy Loading**: Optimized plugin management for minimal startup time
 
@@ -38,7 +41,6 @@ git clone https://github.com/prateekshukla1108/neovim-config.git ~/.config/nvim
 
 ### Key Plugins
 - **Dashboard**: Alpha
-- **AI Completion**: Supermaven
 - **Base Framework**: NvChad
 
 ## Customization

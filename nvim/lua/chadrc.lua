@@ -9,9 +9,9 @@ local M = {}
 -- require("lspconfig").ruff.setup{}
 
 M.base46 = {
-  theme = "cyberpunk-umbra",
+  theme = "nightowl",
   transparency = false,
-  theme_toggle = { "cyberpunk-umbra", "one_light" },
+  theme_toggle = { "nightowl", "one_light" },
 }
 
 M.ui = {
