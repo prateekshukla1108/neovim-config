@@ -11,23 +11,14 @@ This Neovim configuration is based on NvChad, providing a **fast** and **aesthet
 
 ## What's new
 
-Now you can use <leader>ga to get context and ask questions about the text selected in visual mode from gemini-cli 
+Now you can use `<leader>ga` to get context and ask questions about the text selected in visual mode from gemini-cli 
+
 ## Features
 
 - **Dashboard**: Alpha dashboard for a clean startup screen
 - **Base Configuration**: Built on NvChad's robust lua-based framework
 - **Lazy Loading**: Optimized plugin management for minimal startup time
-
-## Scripts
-I generally use more scripts but they are usually tailored for my use. Here are some of the most common ones
-
-- **np** - This will create a new project in ~/home/projects/lang directory based on which language you choose and initialize a git repository
-
-- **p** - Using this you can select your language and just dive into its folder of programming language. You can choose the project from there.
-
-- **run** - This runs the file you last edited.
-
-> Note that this is only for c, c++, rust and python. You can edit it to serve your needs
+- **Gemini CLI support**: For Getting context, Asking questions about code
 
 ## Installation
 
