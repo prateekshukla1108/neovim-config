@@ -9,8 +9,10 @@ local lspconfig = require("lspconfig")
 local servers = {
     "lua_ls",       -- Lua Language Server
     "html",         -- HTML Language Server
+    "jdtls",
     "cssls",        -- CSS Language Server
     "clangd",       -- C/C++ Language Server
+    "ts_ls",
     "ruff",         -- Python Linter
     "pyright",      -- Python Language Server
     "jsonls",       -- JSON Language Server

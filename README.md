@@ -13,6 +13,8 @@ This Neovim configuration is based on NvChad, providing a **fast** and **aesthet
 
 Now you can use `<leader>ga` to get context and ask questions about the text selected in visual mode from gemini-cli 
 
+Use <leader>fp to find the projects (found using .git) and then fuzzy find the files for faster navigation
+
 ## Features
 
 - **Dashboard**: Alpha dashboard for a clean startup screen

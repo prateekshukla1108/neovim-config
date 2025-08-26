@@ -9,9 +9,9 @@ local M = {}
 -- require("lspconfig").ruff.setup{}
 
 M.base46 = {
-  theme = "nightowl",
+  theme = "cyberpunk-umbra",
   transparency = false,
-  theme_toggle = { "nightowl", "one_light" },
+  theme_toggle = { "cyberpunk-umbra", "one_light" },
 }
 
 M.ui = {
@@ -26,8 +26,8 @@ M.ui = {
   telescope = { style = "bordered" },
   statusline = {
     enabled = true,
-    theme = "minimal",
-    separator_style = "round",
+    theme = "default",
+    separator_style = "default",
   },
   tabufline = {
     enabled = true,

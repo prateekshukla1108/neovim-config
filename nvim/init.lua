@@ -25,7 +25,7 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 vim.keymap.set('n', '<C-a>', ':normal! ggVG"+y<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<C-d>', ':normal! ggVG"_d<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-x>', ':normal! ggVG"_d<CR>', { noremap = true, silent = true })
 
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
